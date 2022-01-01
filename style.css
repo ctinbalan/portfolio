@@ -1,0 +1,256 @@
+html, body {
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #171817;
+    padding-bottom: 20px;
+    color: rgb(230, 225, 225);
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+nav > a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.5em; 
+    color: rgb(230, 225, 225);  
+}
+
+nav a:hover {
+    background-color: #cec9c9;
+    color: black;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(230, 225, 225);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#hamburger {
+    display: none;
+}
+
+.hamburger a {
+    display: block;
+    text-decoration: none;
+    text-align: right;
+    color: rgb(230, 225, 225);
+    padding: 10px;
+    font-size: 1.25em;
+}
+
+.hamburger a:hover {
+    background-color: #cec9c9;
+    color: black;
+}
+
+#hbg-menu-icon {
+    display: none;
+    padding: 10px;
+}
+
+#hbg-menu-icon:hover {
+    background-color: #cec9c9;
+}
+#hbg-menu-icon:hover div {
+    background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    #hbg-menu-icon {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    #hamburger {
+        text-align: center;
+    }
+}
+
+h1 {
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+section {
+    padding: 40px;
+}
+
+#about {
+    background-color: #b8b5b5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3%;
+}
+
+.img-me {
+    height: 200px;
+    width: 300px;
+}
+
+#img-me {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#portfolio {
+    text-align: center;
+    background-color: #cec9c9;
+    padding-bottom: 10px;
+}
+
+#portfolio h2 {
+    font-size: 2em;
+}
+
+.portfolio-img {
+    height: 70%;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    padding-bottom: 8%;
+}
+
+.portfolio-p {
+    display: inline-block;
+    font-size: 1.5em;
+    margin: auto;
+}
+
+@media only screen and (max-width: 900px) {
+    #portfolio img {
+        margin: 0;
+        width: 100%;
+    }
+    
+    section {
+        padding: 20px;
+    }
+}
+
+#contacts {
+    text-align: center;
+    background-color: #e0dede;
+}
+
+#contacts a {
+    color: black;
+}
+
+#contacts > a > img {
+    height: 50px;
+    width: 50px;
+}
+
+footer {
+    height: 80px;
+    padding: 0.1px;
+    background-color: #222121;
+    text-align: center;
+    font-size: large;
+    color: white;
+    box-shadow: 0 50vh 0 50vh #222121;
+}
+
+.open-window {
+    display: inline-block;
+    background-color: #cec9c9;
+    color: rgb(102, 101, 101);
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    opacity: 0.7;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+.open-window:hover {
+    background-color: white;
+}
+
+.popup {
+    position: relative;
+    margin: auto;
+    z-index: 1;
+    max-width: 50%;
+}
+
+.window {
+    position: absolute;
+    visibility: hidden;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.window a {
+    text-decoration: underline;
+    color: black;
+}
+
+.show {
+    visibility: visible;
+    opacity: 0.95;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.95;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .popup {
+        max-width: 100%;
+    }
+}
