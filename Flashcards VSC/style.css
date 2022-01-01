@@ -1,0 +1,63 @@
+body {
+    /*background-image: url(https://www.daytrading.com/wp-content/uploads/2019/03/izometric-trader-school-vector-id978944190.jpg);*/
+    background-color: rgb(206, 241, 233);
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    color: rgb(12, 155, 212);
+    font-family: 'Zen Maru Gothic', sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+    width: 550px;
+    height: 550px;
+    perspective: 3000px;
+  }
+  
+  p {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: bolder;
+    font-size: 1.2em;
+    padding: 10%;
+  }
+  
+  .card {
+    height: 170px;
+    width: 170px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1.2s 0.25s ease;
+  }
+  
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    background-color: #fcb092;
+    color: #ffffff;
+  }
+  
+  .back {
+    background-color: #ffffff;
+    color: #fcb092;
+    transform: rotateY(180deg);
+  }

@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#upper-case, #lower-case, #proper-case, #sentence-case, #save-text-file {
+    background-color: lightcoral;
+    border-radius: 5%;
+    border: none;
+    height: 40px;
+    width: 130px;
+    color: white;
+    font-size: 1rem;
+}
+
+#textarea {
+    height: 200px;
+    width: 660px;
+}

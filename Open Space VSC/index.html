@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Open Space</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="main.js" defer></script>
+</head>
+<body>
+<div class="space">
+    <div class="planet-area">
+        <img class="planet" src="pics/mars.png">
+        <img class="rocket" src="pics/rocket.png">
+    </div>
+    <div class="control-panel">
+        <div class="control-panel__inner">
+            <form>
+                <input id="pass" type="password" placeholder="Enter password to unlock">
+                <input id="ok-button" type="submit" value="OK">
+            </form>
+            <div class="check-buttons">
+                <input class="password-protected" type="checkbox" disabled onchange="a()">
+                <input class="password-protected" type="checkbox" disabled onchange="a()">
+                <input class="password-protected" type="checkbox" disabled onchange="a()">
+                <input class="password-protected" type="checkbox" disabled onchange="a()">
+                <input class="password-protected" type="checkbox" disabled onchange="a()">
+                <input class="password-protected" type="checkbox" disabled onchange="a()">
+            </div>
+            <div class="levers">
+                <input class="password-protected" type="range" disabled onchange="a()">
+                <input class="password-protected" type="range" disabled onchange="a()">
+                <input class="password-protected" type="range" disabled onchange="a()">
+                <input class="password-protected" type="range" disabled onchange="a()">
+                <input class="password-protected" type="range" disabled onchange="a()">
+            </div>
+            <input id="launch-button" class="password-protected-2" type="submit" value="Launch" disabled onclick="launchRocket()">
+        </div>
+    </div>
+</div>
+</body>
+</html>
