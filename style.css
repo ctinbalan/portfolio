@@ -98,6 +98,10 @@ nav a:hover {
     #hamburger {
         text-align: center;
     }
+    
+    #about {
+        flex-direction: column;
+    }
 }
 
 h1 {
@@ -120,14 +124,9 @@ section {
     gap: 3%;
 }
 
-.img-me {
-    height: 200px;
-    width: 300px;
-}
-
 #img-me {
-    height: 100%;
-    width: 100%;
+    height: 250px;
+    width: 250px;
     border-radius: 10px;
 }
 
